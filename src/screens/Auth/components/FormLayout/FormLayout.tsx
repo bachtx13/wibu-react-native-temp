@@ -4,8 +4,8 @@ import { IFormLayoutProps } from './FormLayout.types.ts';
 import { useCreateStyle } from '../../../../theme/hooks/useCreateStyle.ts';
 import { styleCreator } from '../../Auth.styles.ts';
 import { EAuthStatus } from '../../Auth.types.ts';
-import { useApplicationNavigation } from '../../../../navigations/auth/useApplicationNavigation.tsx';
-import { EApplicationScreens } from '../../../../navigations/auth/screens.types.ts';
+import { useApplicationNavigation } from '../../../../navigations/application/useApplicationNavigation.tsx';
+import { EApplicationScreens } from '../../../../navigations/application/screens.types.ts';
 
 const FormLayout = (props: IFormLayoutProps) => {
   const { children, status } = props;

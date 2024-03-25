@@ -6,7 +6,6 @@ import { WibuTextFieldControl } from '../../../ui/WibuTextFieldControl/WibuTextF
 import { usePostRegisterMutation } from '../../../api/auth/auth.api.ts';
 import { useToast } from '../../../hooks/useToast.tsx';
 import { FetchBaseQueryError } from '@reduxjs/toolkit/query';
-import { IBaseResponseObject } from '../../../api/api-dto.types.ts';
 import { useCreateStyle } from '../../../theme/hooks/useCreateStyle.ts';
 import { styleCreator } from '../Auth.styles.ts';
 import { FormLayout } from '../components/FormLayout/FormLayout.tsx';
@@ -16,6 +15,7 @@ import { IRegisterRequest } from '../../../api/auth/auth-dto.types.ts';
 import { WibuButton } from '../../../ui/WibuButton/WibuButton.tsx';
 import { WibuKeyboardDismissFocusOut } from '../../../ui/WibuKeyboardDismissFocusOut/WibuKeyboardDismissFocusOut.tsx';
 import { EAuthStatus } from '../Auth.types.ts';
+import { IBaseResponseObject } from '../../../api/api.types.ts';
 
 const Register = () => {
   const { Layouts } = useTheme();
@@ -46,7 +46,10 @@ const Register = () => {
     try {
       await postRegister(registerData).unwrap();
     } catch (err) {
-      console.log(err);
+      toast.danger({
+        title: 'Error',
+        content: 'Some error',
+      });
     }
   };
 
@@ -104,6 +107,7 @@ const Register = () => {
                 error={errors.confirmationPassword}
               />
               <WibuButton
+                isDisable={!dirty || !isValid}
                 onPress={async () => {
                   await submitForm();
                   dirty &&

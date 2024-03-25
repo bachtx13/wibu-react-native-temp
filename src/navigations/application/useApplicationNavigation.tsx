@@ -1,8 +1,8 @@
 import { useNavigation } from '@react-navigation/native';
-import { ApplicationStackProps } from './application-screens.types.ts';
+import { ApplicationStackNavigationProps } from './screens.types.ts';
 
 const useApplicationNavigation = () => {
-  return useNavigation<ApplicationStackProps>();
+  return useNavigation<ApplicationStackNavigationProps>();
 };
 
 export { useApplicationNavigation };

@@ -1,5 +1,5 @@
 export interface IUserState {
-  info: IUserInfo;
+  info?: IUserInfo;
   isLoggedIn: boolean;
 }
 

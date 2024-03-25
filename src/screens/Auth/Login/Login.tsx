@@ -50,7 +50,10 @@ const Login = () => {
     try {
       await postLogin(loginRequest).unwrap();
     } catch (err) {
-      console.log(err);
+      toast.danger({
+        title: 'Error',
+        content: 'Some error',
+      });
     }
   };
 
@@ -96,6 +99,7 @@ const Login = () => {
                 error={errors.password}
               />
               <WibuButton
+                isDisable={!dirty || !isValid}
                 onPress={async () => {
                   await submitForm();
                   dirty &&

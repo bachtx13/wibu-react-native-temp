@@ -1,19 +1,21 @@
 import { ReactNode } from 'react';
-import { TextStyle, ViewStyle } from 'react-native';
+import { StyleProp, TextStyle, ViewStyle } from 'react-native';
 import { ESize } from '../../assets/common/enum/size.enum.ts';
 
 export interface IWibuButtonProps {
   children: string | ReactNode;
-  containerStyle?: ViewStyle | ViewStyle[];
-  buttonStyle?: ViewStyle | ViewStyle[];
+  containerStyle?: StyleProp<ViewStyle>;
+  buttonStyle?: StyleProp<ViewStyle>;
   onPress: () => void;
   appearance?: EButtonAppearance;
   size?: ESize;
+  isDisable?: boolean;
 }
 
 export interface IWibuButtonStyles {
   buttonWrapper: ViewStyle;
   button: ViewStyle;
+  buttonDisabled: ViewStyle;
   text: TextStyle;
 }
 

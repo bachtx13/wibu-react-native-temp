@@ -22,7 +22,7 @@ export const useTheme = (): Theme => {
     success: Palette.green2,
     successFocus: Palette.green3,
     primaryBorder: Palette.gray3,
-    disable: Palette.gray4,
+    disable: Palette.gray3,
     disableBorder: Palette.gray3,
     textLink: Palette.blue4,
   };

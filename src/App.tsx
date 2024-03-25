@@ -4,7 +4,7 @@ import { STORYBOOK_ENABLED } from '@env';
 import { ThemeProvider } from './theme/context/ThemeProvider/ThemeProvider.tsx';
 import { useTheme } from './theme/hooks/useTheme.ts';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { ApplicationNavigation } from './navigations/auth/ApplicationNavigation.tsx';
+import { ApplicationNavigation } from './navigations/application/ApplicationNavigation.tsx';
 import { Provider } from 'react-redux';
 import { persistedStore, store } from './store/store.ts';
 import { PersistGate } from 'redux-persist/integration/react';

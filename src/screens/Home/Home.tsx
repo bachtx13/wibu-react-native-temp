@@ -18,10 +18,11 @@ const Home = () => {
   const toast = useToast();
   const { info } = useSelector<RootState, IUserState>(state => state.user);
   useEffect(() => {
-    toast.success({
-      title: 'Welcome back',
-      content: info.email,
-    });
+    info &&
+      toast.success({
+        title: 'Welcome back',
+        content: info?.email,
+      });
   }, []);
   const handleLogout = () => {
     dispatch(clearUser());

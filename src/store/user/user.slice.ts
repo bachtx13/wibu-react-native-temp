@@ -25,7 +25,9 @@ export const userSlice = createSlice({
         },
       )
       .addMatcher(userApi.endpoints?.getUserInfo.matchRejected, state => {
-        state.info = {};
+        if (state.info) {
+          state.info = {};
+        }
         state.isLoggedIn && (state.isLoggedIn = false);
       });
   },

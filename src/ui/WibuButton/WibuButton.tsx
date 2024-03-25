@@ -8,7 +8,14 @@ import { Palette } from '../../assets/common/constant/color.constants.ts';
 import { useTheme } from '../../theme/hooks/useTheme.ts';
 
 const WibuButton = (props: IWibuButtonProps) => {
-  const { appearance, onPress, buttonStyle, containerStyle, children } = props;
+  const {
+    appearance,
+    onPress,
+    buttonStyle,
+    isDisable,
+    containerStyle,
+    children,
+  } = props;
   const { Colors } = useTheme();
   const underlayColors: Record<EButtonAppearance, string> = {
     [EButtonAppearance.INFO]: Palette.blue2,
@@ -21,7 +28,8 @@ const WibuButton = (props: IWibuButtonProps) => {
   return (
     <View style={[styles.buttonWrapper, containerStyle]}>
       <TouchableHighlight
-        style={[styles.button, buttonStyle]}
+        disabled={isDisable}
+        style={[styles.button, buttonStyle, isDisable && styles.buttonDisabled]}
         onPress={onPress ?? (() => {})}
         underlayColor={underlayColors[appearance ?? EButtonAppearance.PRIMARY]}
       >

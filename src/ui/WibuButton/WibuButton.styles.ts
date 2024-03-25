@@ -63,5 +63,8 @@ export const styleCreator: StyleCreator<IWibuButtonStyles, IWibuButtonProps> = (
       fontWeight: '500',
       ...Layouts.textCenter,
     },
+    buttonDisabled: {
+      backgroundColor: Colors.disable,
+    },
   });
 };
