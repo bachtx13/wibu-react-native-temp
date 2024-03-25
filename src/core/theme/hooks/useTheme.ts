@@ -1,11 +1,10 @@
 import { ColorsType, Theme } from '../../types/theme.types.ts';
 import { Palette } from '../../assets/common/constant/color.constants.ts';
-import { useContext } from 'react';
-import { ThemeContext } from '../context/ThemeProvider/ThemeProvider.tsx';
+import { useThemeContext } from '../context/ThemeProvider/ThemeProvider.tsx';
 import { Layouts } from '../../assets/common/constant/layout.constants.ts';
 
 export const useTheme = (): Theme => {
-  const { isDarkMode } = useContext(ThemeContext);
+  const { isDarkMode } = useThemeContext();
   const Colors: ColorsType = {
     transparent: Palette.transparent,
     primary: isDarkMode ? Palette.black : Palette.white,

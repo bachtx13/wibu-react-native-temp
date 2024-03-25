@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Text, TouchableWithoutFeedback, View } from 'react-native';
 import { IFormLayoutProps } from './FormLayout.types.ts';
-import { useCreateStyle } from '../../../../theme/hooks/useCreateStyle.ts';
+import { useCreateStyle } from '../../../../core/theme/hooks/useCreateStyle.ts';
 import { styleCreator } from '../../Auth.styles.ts';
 import { EAuthStatus } from '../../Auth.types.ts';
 import { useApplicationNavigation } from '../../../../navigations/application/useApplicationNavigation.tsx';

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Text } from 'react-native';
 import { IWibuTextErrorProps } from './WibuTextError.types.tsx';
-import { useCreateStyle } from '../../../../theme/hooks/useCreateStyle.ts';
+import { useCreateStyle } from '../../../../core/theme/hooks/useCreateStyle.ts';
 import { styleCreator } from './WibuTextError.styles.tsx';
 
 const WibuTextError = (props: IWibuTextErrorProps) => {

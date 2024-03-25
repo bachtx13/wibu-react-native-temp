@@ -1,4 +1,4 @@
-import { StyleCreator } from '../../theme/hooks/useCreateStyle.ts';
+import { StyleCreator } from '../../core/theme/hooks/useCreateStyle.ts';
 import {
   IWibuTextFieldControlProps,
   IWibuTextFieldControlStyles,

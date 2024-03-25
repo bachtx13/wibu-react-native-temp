@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 import { IAuthStyles } from './Auth.types.ts';
-import { StyleCreator } from '../../theme/hooks/useCreateStyle.ts';
+import { StyleCreator } from '../../core/theme/hooks/useCreateStyle.ts';
 
 export const styleCreator: StyleCreator<IAuthStyles> = theme => {
   const { Colors, Layouts } = theme;

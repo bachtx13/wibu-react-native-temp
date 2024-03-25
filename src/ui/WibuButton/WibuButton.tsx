@@ -2,10 +2,10 @@ import * as React from 'react';
 import { Text, TouchableHighlight, View } from 'react-native';
 import { EButtonAppearance, IWibuButtonProps } from './WibuButton.types.ts';
 import { isString } from '../../util/type-util.ts';
-import { useCreateStyle } from '../../theme/hooks/useCreateStyle.ts';
+import { useCreateStyle } from '../../core/theme/hooks/useCreateStyle.ts';
 import { styleCreator } from './WibuButton.styles.ts';
-import { Palette } from '../../assets/common/constant/color.constants.ts';
-import { useTheme } from '../../theme/hooks/useTheme.ts';
+import { Palette } from '../../core/assets/common/constant/color.constants.ts';
+import { useTheme } from '../../core/theme/hooks/useTheme.ts';
 
 const WibuButton = (props: IWibuButtonProps) => {
   const {
