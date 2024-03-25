@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { useEffect } from 'react';
 import { Image, Text, View } from 'react-native';
-import { useToast } from '../../hooks/useToast.tsx';
+import { useToast } from '../../core/hooks/useToast.tsx';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../store/store.types.ts';
 import { IUserState } from '../../store/user/user.types.ts';
-import { useCreateStyle } from '../../theme/hooks/useCreateStyle.ts';
+import { useCreateStyle } from '../../core/theme/hooks/useCreateStyle.ts';
 import { styleCreator } from './Home.styles.ts';
 import { WibuButton } from '../../ui/WibuButton/WibuButton.tsx';
 import { EButtonAppearance } from '../../ui/WibuButton/WibuButton.types.ts';

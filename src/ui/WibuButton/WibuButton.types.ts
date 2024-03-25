@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 import { StyleProp, TextStyle, ViewStyle } from 'react-native';
-import { ESize } from '../../assets/common/enum/size.enum.ts';
+import { ESize } from '../../core/assets/common/enum/size.enum.ts';
 
 export interface IWibuButtonProps {
   children: string | ReactNode;

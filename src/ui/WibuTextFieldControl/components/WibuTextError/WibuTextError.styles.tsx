@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 import { IWibuTextErrorStyles } from './WibuTextError.types.tsx';
-import { StyleCreator } from '../../../../theme/hooks/useCreateStyle.ts';
+import { StyleCreator } from '../../../../core/theme/hooks/useCreateStyle.ts';
 
 export const styleCreator: StyleCreator<IWibuTextErrorStyles> = theme => {
   const { Colors } = theme;

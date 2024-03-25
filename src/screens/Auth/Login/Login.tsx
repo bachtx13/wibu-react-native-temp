@@ -1,12 +1,12 @@
 import * as React from 'react';
 import { useEffect } from 'react';
 import { Text, View } from 'react-native';
-import { useTheme } from '../../../theme/hooks/useTheme.ts';
+import { useTheme } from '../../../core/theme/hooks/useTheme.ts';
 import { WibuTextFieldControl } from '../../../ui/WibuTextFieldControl/WibuTextFieldControl.tsx';
 import { usePostLoginMutation } from '../../../api/auth/auth.api.ts';
-import { useToast } from '../../../hooks/useToast.tsx';
+import { useToast } from '../../../core/hooks/useToast.tsx';
 import { FetchBaseQueryError } from '@reduxjs/toolkit/query';
-import { useCreateStyle } from '../../../theme/hooks/useCreateStyle.ts';
+import { useCreateStyle } from '../../../core/theme/hooks/useCreateStyle.ts';
 import { styleCreator } from '../Auth.styles.ts';
 import { FormLayout } from '../components/FormLayout/FormLayout.tsx';
 import { Formik } from 'formik';

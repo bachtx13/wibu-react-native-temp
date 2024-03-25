@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-import { PASSWORD_TEMPLATE } from '../../../assets/common/constant/validation.constants.ts';
+import { PASSWORD_TEMPLATE } from '../../../core/assets/common/constant/validation.constants.ts';
 
 export const registerSchema = yup.object().shape({
   email: yup

@@ -7,10 +7,10 @@ import {
   View,
 } from 'react-native';
 import { IWibuTextFieldControlProps } from './WibuTextFieldControl.types.tsx';
-import { useCreateStyle } from '../../theme/hooks/useCreateStyle.ts';
+import { useCreateStyle } from '../../core/theme/hooks/useCreateStyle.ts';
 import { styleCreator } from './WibuTextFieldControl.styles.tsx';
 import { WibuTextError } from './components/WibuTextError/WibuTextError.tsx';
-import { useTheme } from '../../theme/hooks/useTheme.ts';
+import { useTheme } from '../../core/theme/hooks/useTheme.ts';
 
 const WibuTextFieldControl = forwardRef<TextInput, IWibuTextFieldControlProps>(
   (props, ref) => {

@@ -5,7 +5,7 @@ import {
   WibuToastApi,
 } from '../types/toast.types.ts';
 import { useCreateStyle } from '../theme/hooks/useCreateStyle.ts';
-import { styleCreator } from '../ui/WibuToast/WibuToast.styles.ts';
+import { styleCreator } from '../../ui/WibuToast/WibuToast.styles.ts';
 
 const useToast = (): WibuToastApi => {
   const styles = useCreateStyle(styleCreator, {});

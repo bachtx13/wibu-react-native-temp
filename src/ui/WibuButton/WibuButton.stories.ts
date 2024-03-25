@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { WibuButton } from './WibuButton.tsx';
 import { EButtonAppearance } from './WibuButton.types.ts';
-import { ESize } from '../../assets/common/enum/size.enum.ts';
+import { ESize } from '../../core/assets/common/enum/size.enum.ts';
 
 const meta: Meta<typeof WibuButton> = {
   component: WibuButton,

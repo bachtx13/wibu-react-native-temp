@@ -4,8 +4,8 @@ import {
   IWibuButtonStyles,
 } from './WibuButton.types.ts';
 import { StyleSheet, ViewStyle } from 'react-native';
-import { ESize } from '../../assets/common/enum/size.enum.ts';
-import { StyleCreator } from '../../theme/hooks/useCreateStyle.ts';
+import { ESize } from '../../core/assets/common/enum/size.enum.ts';
+import { StyleCreator } from '../../core/theme/hooks/useCreateStyle.ts';
 
 export const styleCreator: StyleCreator<IWibuButtonStyles, IWibuButtonProps> = (
   theme,
